@@ -85,6 +85,10 @@
   (linum-mode t))
 (add-hook 'find-file-hook 'linum-mode-find-file-hook)
 
+;; recent files
+(require 'recentf)
+(recentf-mode 1)
+
 ;; gui options
 (load (concat config-dir "rc-gui.el"))
 
