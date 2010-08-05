@@ -25,6 +25,9 @@
 ;; kill current buffer
 (global-set-key (kbd "C-x k") 'kill-this-buffer)
 
+;; undo
+(global-set-key (kbd "C-z") 'undo)
+
 ;; open next line
 (defun open-next-line (arg)
   "Move to the next line and then opens a line.
