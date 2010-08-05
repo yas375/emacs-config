@@ -80,6 +80,11 @@
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'forward)
 
+;; always linum-mode
+(defun linum-mode-find-file-hook ()
+  (linum-mode t))
+(add-hook 'find-file-hook 'linum-mode-find-file-hook)
+
 ;; gui options
 (load (concat config-dir "rc-gui.el"))
 
