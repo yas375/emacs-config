@@ -31,3 +31,8 @@
 ;; find recent files
 (global-set-key (kbd "C-x f") 'recentf-ido-find-file)
 
+;; MAC OS: use cmd as meta
+(setq mac-option-key-is-meta nil)
+(setq mac-command-key-is-meta t)
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier nil)
