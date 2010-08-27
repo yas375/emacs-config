@@ -116,5 +116,9 @@
 ;; org-mode
 (load (concat config-dir "rc-org.el"))
 
+(require 'desktop)
+(desktop-save-mode 1)
+(add-hook 'auto-save-hook (lambda () (desktop-save-in-desktop-dir)))
+
 ;; start server
 (server-start)
