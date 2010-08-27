@@ -1,3 +1,7 @@
+;;(require 'color-theme)
+;;(color-theme-initialize)
+;;(color-theme-standart)
+
 ;; turn on column number mode
 (column-number-mode t)
 
