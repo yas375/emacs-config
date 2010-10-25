@@ -117,8 +117,7 @@
 (load-configs "rc-ruby.el"
               "rc-erlang.el"
               "rc-js.el"
-              "rc-haskell.el"
-              "rc-lisp.el")
+              "rc-haskell.el")
 
 ;; spell checking
 (load-config "rc-spell.el")
