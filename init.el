@@ -130,4 +130,6 @@
 (add-hook 'auto-save-hook (lambda () (desktop-save-in-desktop-dir)))
 
 ;; start server
-(server-start)
+(require 'server)
+(when (not (server-running-p))
+  (server-start))
