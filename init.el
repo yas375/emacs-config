@@ -139,6 +139,9 @@
 ;; auto reloading of chanded files from disk
 (auto-revert-mode t)
 
+;; use rvm default ruby
+(rvm-use-default)
+
 ;; start server
 (require 'server)
 (when (not (server-running-p))
