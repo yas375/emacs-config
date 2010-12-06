@@ -31,8 +31,10 @@
 ;; find recent files
 (global-set-key (kbd "C-x f") 'recentf-ido-find-file)
 
-;; copy to system buffer
+;; cut/copy/paste to/from system buffer
+(global-set-key (kbd "C-S-x") 'clipboard-kill-region)
 (global-set-key (kbd "C-S-c") 'clipboard-kill-ring-save)
+(global-set-key (kbd "C-S-v") 'x-clipboard-yank)
 
 ;; MAC OS: use cmd as meta
 (setq mac-option-key-is-meta nil)
