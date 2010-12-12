@@ -52,7 +52,7 @@
 (require 'rinari)
 
 ;; yasnippets-rails
-(load (concat config-dir "vendor/yasnippets-rails/setup.el"))
+;;(load (concat config-dir "vendor/yasnippets-rails/setup.el"))
 
 ;; rspec
 (add-to-list 'load-path (concat config-dir "vendor/rspec-mode"))

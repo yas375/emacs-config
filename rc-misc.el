@@ -1,8 +1,8 @@
 ;; yasnippet
-(require 'yasnippet-bundle)
-(setq yas/prompt-functions '(yas/dropdown-prompt
-			     yas/ido-prompt
-			     yas/completing-prompt))
+;;(require 'yasnippet-bundle)
+;;(setq yas/prompt-functions '(yas/dropdown-prompt
+;;			     yas/ido-prompt
+;;			     yas/completing-prompt))
 
 ;; auto-complete
 (add-to-list 'load-path (concat config-dir "vendor/auto-complete"))
