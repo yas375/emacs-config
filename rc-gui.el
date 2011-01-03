@@ -18,7 +18,7 @@
 (column-number-mode t)
 
 ;; change font-size
-(set-face-attribute 'default nil :height 100)
+(set-face-attribute 'default nil :height 120)
 
 ;; highlight brackets
 (show-paren-mode t)
