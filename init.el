@@ -133,10 +133,6 @@
 ;; org-mode
 (load-config "rc-org.el")
 
-(require 'desktop)
-(desktop-save-mode 1)
-(add-hook 'auto-save-hook (lambda () (desktop-save-in-desktop-dir)))
-
 ;; auto reloading of chanded files from disk
 (auto-revert-mode t)
 
