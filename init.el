@@ -133,6 +133,9 @@
 ;; org-mode
 (load-config "rc-org.el")
 
+;; dedicated-mode
+(load-config "vendor/dedicated.el")
+
 ;; auto reloading of chanded files from disk
 (auto-revert-mode t)
 
