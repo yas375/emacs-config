@@ -44,3 +44,6 @@
 ;; nginx config files
 (add-to-list 'load-path (concat config-dir "vendor/nginx-mode"))
 (autoload 'nginx-mode "nginx-mode" nil t)
+
+;; in calendar monday is a first day of the weeky
+(setq calendar-week-start-day 1)

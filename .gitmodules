@@ -34,3 +34,6 @@
 [submodule "vendor/lua-mode"]
 	path = vendor/lua-mode
 	url = git://github.com/rrthomas/lua-mode.git
+[submodule "vendor/org-mode"]
+	path = vendor/org-mode
+	url = git://orgmode.org/org-mode.git

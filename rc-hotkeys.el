@@ -36,6 +36,10 @@
 (global-set-key (kbd "C-S-c") 'clipboard-kill-ring-save)
 (global-set-key (kbd "C-S-v") 'x-clipboard-yank)
 
+;; org mode
+(global-set-key (kbd "C-c l") 'org-store-link)
+(global-set-key (kbd "C-c a") 'org-agenda)
+
 ;; MAC OS: use cmd as meta
 (setq mac-option-key-is-meta nil)
 (setq mac-command-key-is-meta t)
