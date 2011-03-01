@@ -68,6 +68,10 @@
 (add-to-list 'auto-mode-alist '("\\.rhtml$" . rhtml-mode))
 (add-to-list 'auto-mode-alist '("\\.html\\.erb$" . rhtml-mode))
 
+;; disable flymake errors highlighting before save
+(setq flymake-no-changes-timeout most-positive-fixnum)
+(setq flymake-start-syntax-check-on-newline nil)
+
 ;; rvm
 (add-to-list 'load-path (concat config-dir "vendor/rvm.el"))
 (require 'rvm)
