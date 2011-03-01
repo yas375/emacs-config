@@ -9,10 +9,9 @@
 (setq org-log-done t)
 
 (setq org-directory "~/Dropbox/org")
-(setq org-mobile-directory "~/Dropbox/MobileOrg")
-(setq org-agenda-files (list "~/Dropbox/org/work.org"
-                             "~/Dropbox/org/zachet.org"
-                             "~/Dropbox/org/home.org"))
+(setq org-mobile-directory "~/Dropbox/MobileOrg/")
+(setq org-agenda-files (list "~/Dropbox/org/daily.org"
+                             "~/Dropbox/org/zachet.org"))
 (setq org-mobile-inbox-for-pull "~/Dropbox/org/inbox.org")
 
 (defun my-org ()
@@ -28,17 +27,18 @@
   (delete-other-windows)
   (split-window-horizontally)
   (setq eik-links-win-w 60)
-  (shrink-window-horizontally 32)
-  (find-file "~/Dropbox/org/links.org")
+  (shrink-window-horizontally 52)
+  (find-file "~/Dropbox/org/daily.org")
   (dedicated-mode)
   (other-window 1)
-  (find-file "~/Dropbox/org/daily.org")
+  (find-file "~/Dropbox/org/zachet.org")
   (split-window-vertically)
   (split-window-horizontally)
   (other-window 1)
-  (find-file "~/")
+  (find-file "~/Dropbox/org/")
+  (dedicated-mode)
   (other-window 1)
-  (find-file "~/")
+  (find-file "~/Dropbox/org/")
   (other-window 1)
   (other-window 1)
   (dedicated-mode)
