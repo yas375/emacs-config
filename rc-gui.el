@@ -59,3 +59,14 @@
 ;;  '(font-lock-function-name-face ((t (:foreground "#FFF980")))) ;#FEFD86
 ;;  '(font-lock-variable-name-face ((t (:foreground "#B7DFF8")))) ;#BBE6FB
 ;; )
+
+;; smooth scrolling
+(setq redisplay-dont-pause t
+  scroll-margin 2
+  scroll-step 1
+  scroll-conservatively 10000
+  scroll-preserve-screen-position 1)
+
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
+(setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
+(setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
