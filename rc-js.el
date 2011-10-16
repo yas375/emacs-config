@@ -5,3 +5,7 @@
 (add-to-list 'auto-mode-alist '("\\.js\\.erb$" . espresso-mode))
 
 (setq espresso-indent-level 2)
+
+;; coffee-mode
+(add-to-list 'load-path (concat config-dir "vendor/coffee-mode"))
+(require 'coffee-mode)
