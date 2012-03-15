@@ -24,11 +24,11 @@
 (show-paren-mode t)
 
 ;; frame size
-(setq default-frame-alist
-      (append default-frame-alist
-	      '((width . 200)
-		(height . 52))))
-(setq initial-frame-alist (copy-alist default-frame-alist))
+(defun maximize-frame ()
+  (interactive)
+  (set-frame-position (selected-frame) 0 0)
+  (set-frame-size (selected-frame) 1000 1000))
+(maximize-frame)
 
 (setq split-width-threshold nil)
 
