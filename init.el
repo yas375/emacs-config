@@ -19,6 +19,10 @@
   `(if (file-exists-p (concat config-dir ,filename))
        (load-config ,filename)))
 
+;; Enhanced Ruby Mode
+(add-to-list 'load-path (concat config-dir "vendor/Enhanced-Ruby-Mode"))
+;; variable enh-ruby-program will be specified in env.el later
+
 ;; environment settings
 (load-config-if-exists "env.el")
 (load-config-if-exists (concat system-name ".el"))
