@@ -32,11 +32,6 @@
 (autoload 'magit-status "magit" nil t)
 (global-set-key (kbd "C-c g") 'magit-status)
 
-;; zencoding
-(add-to-list 'load-path (concat config-dir "vendor/zencoding"))
-(require 'zencoding-mode)
-(add-hook 'rhtml-mode-hook 'zencoding-mode)
-
 ;; nav
 (add-to-list 'load-path (concat config-dir "vendor/nav"))
 (autoload 'nav "nav" nil t)

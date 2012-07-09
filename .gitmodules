@@ -7,9 +7,6 @@
 [submodule "vendor/yasnippets-rails"]
 	path = vendor/yasnippets-rails
 	url = git://github.com/eschulte/yasnippets-rails.git
-[submodule "vendor/zencoding"]
-	path = vendor/zencoding
-	url = git://github.com/chrisdone/zencoding.git
 [submodule "vendor/rspec-mode"]
 	path = vendor/rspec-mode
 	url = git://github.com/pezra/rspec-mode.git
