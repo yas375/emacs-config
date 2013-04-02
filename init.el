@@ -113,7 +113,8 @@
 (winner-mode t)
 
 ;; gui options
-(load-config "rc-gui.el")
+(if window-system
+    (load-config "rc-gui.el"))
 
 ;; custom functions
 (load-config "rc-defuns.el")
