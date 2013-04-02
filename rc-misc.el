@@ -6,6 +6,7 @@
 
 ;; auto-complete
 (add-to-list 'load-path (concat config-dir "vendor/auto-complete"))
+(add-to-list 'load-path (concat config-dir "vendor/auto-complete/lib/popup"))
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 (setq ac-comphist-file  "~/.emacs.d/ac-comphist.dat")
